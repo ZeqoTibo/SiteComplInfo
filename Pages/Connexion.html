@@ -22,29 +22,31 @@
 <div class="container text-center">
 
     <!-- Logo du site -->
-    <a href="Accueil_non_connecter.html" alt="Logo Accueil" ><img src="../Images/logo.svg" alt="logo" style="margin: 10%; height: 150px"></a>
+    <a href="Accueil_non_connecter.html" alt="Logo Accueil" ><img src="../Images/logo.svg" alt="logo" class="w-50"></a>
 
     <h4>Connexion</h4>
 
 
-    <!-- Formulaire de saisi des informations -->
-    <form method="post" action="#" class="needs-validation" novalidate>
-        <div class="form-group">
-            <label for="login" class="text-center">Pseudo</label>
-            <input type="text" class="form-control" id="login" placeholder="Exemple : Cleo_fleo" name="login" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre un login.</div>
-        </div>
-        <div class="form-group">
-            <label for="password">Mot de passe</label>
-            <input type="password" class="form-control" id="password" placeholder="Exemple : j5gH8m76" name="password" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre un mot de passe.</div>
-        </div>
+    <div class=" d-flex justify-content-center">
+        <!-- Formulaire de saisi des informations -->
+        <form method="post" action="#" class="needs-validation w-50" novalidate>
+            <div class="form-group">
+                <label for="login" class="text-center">Pseudo</label>
+                <input type="text" class="form-control" id="login" placeholder="Exemple : Cleo_fleo" name="login" required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre un login.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="Exemple : j5gH8m76" name="password" required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre un mot de passe.</div>
+            </div>
 
-        <!-- Bouton qui envoie les informations du formulaire (Submit) -->
-        <a class="btn btn-success" href="Accueil_connecter.html">Valider</a>
-    </form>
+            <!-- Bouton qui envoie les informations du formulaire (Submit) -->
+            <a class="btn btn-success m-2" href="Accueil_connecter.html">Valider</a>
+        </form>
+    </div>
 
     <a href="Inscription.html" style="font-weight: bold; color: #232425">S'inscrire</a>
 </div>

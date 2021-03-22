@@ -14,7 +14,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Icons Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><meta charset="UTF-8">
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="UTF-8">
     <title>TOPISCINE - Inscription</title>
 </head>
 <body>
@@ -23,47 +24,54 @@
 
     <div class="text-center">
         <!-- Logo du site -->
-        <a href="Accueil_non_connecter.html" alt="Logo Accueil" ><img src="../Images/logo.svg" alt="logo" style="margin: 10%; height: 150px"></a>
+        <a href="Accueil_non_connecter.html" alt="Logo Accueil"><img src="../Images/logo.svg" alt="logo"
+                                                                     class="w-50"></a>
 
         <h4>Inscription</h4>
     </div>
 
 
+    <div class=" d-flex justify-content-center">
+        <!-- Formulaire de saisi des informations -->
+        <form method="post" action="#" class="needs-validation w-50" novalidate>
+            <div class="form-group ">
+                <!-- small permet de reduire la taille du tag -->
+                <small><label for="login">Pseudo</label></small>
+                <input type="text" class="form-control" id="login" placeholder="Ex : Cleo_fleo" name="newlogin"
+                       required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre un login.</div>
+            </div>
+            <div class="form-group">
+                <!-- small permet de reduire la taille du tag -->
+                <small><label for="password" class="text-center">Mot de passe</label></small>
+                <input type="password" class="form-control" id="password" placeholder="Ex : j5gH8m76" name="newpassword"
+                       required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre un mot de passe.</div>
+            </div>
+            <div class="form-group">
+                <!-- small permet de reduire la taille du tag -->
+                <small><label for="mail" class="text-center">Mail</label></small>
+                <input type="email" class="form-control" id="mail" placeholder="Ex : cleo.fleo@gmail.com" name="newmail"
+                       required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre une adresse mail.</div>
+            </div>
+            <div class="form-group">
+                <!-- small permet de reduire la taille du tag -->
+                <small><label for="tel" class="text-center">Téléphone</label></small>
+                <!-- pattern permet la sélection au clavier de seulement les chiffres -->
+                <input type="tel"
+                       pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                       class="form-control" id="tel" placeholder="Ex : 0699989796" name="newtel" required>
+                <div class="valid-feedback">Valide.</div>
+                <div class="invalid-feedback">Veuillez mettre un numéro de téléphone.</div>
+            </div>
 
-    <!-- Formulaire de saisi des informations -->
-    <form method="post" action="#" class="needs-validation" novalidate>
-        <div class="form-group ">
-            <!-- small permet de reduire la taille du tag -->
-            <small><label for="login">Pseudo</label></small>
-            <input type="text" class="form-control" id="login" placeholder="Ex : Cleo_fleo" name="newlogin" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre un login.</div>
-        </div>
-        <div class="form-group">
-            <!-- small permet de reduire la taille du tag -->
-            <small><label for="password" class="text-center">Mot de passe</label></small>
-            <input type="password" class="form-control" id="password" placeholder="Ex : j5gH8m76" name="newpassword" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre un mot de passe.</div>
-        </div>
-        <div class="form-group">
-            <!-- small permet de reduire la taille du tag -->
-            <small><label for="mail" class="text-center">Mail</label></small>
-            <input type="email" class="form-control" id="mail" placeholder="Ex : cleo.fleo@gmail.com" name="newmail" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre une adresse mail.</div>
-        </div>
-        <div class="form-group">
-            <!-- small permet de reduire la taille du tag -->
-            <small><label for="tel" class="text-center">Téléphone</label></small>
-            <!-- pattern permet la sélection au clavier de seulement les chiffres -->
-            <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="form-control" id="tel" placeholder="Ex : 0699989796" name="newtel" required>
-            <div class="valid-feedback">Valide.</div>
-            <div class="invalid-feedback">Veuillez mettre un numéro de téléphone.</div>
-        </div>
-
-        <a class="btn btn-success" href="Accueil_connecter.html">Valider</a>
-    </form>
+            <a class="btn btn-success m-2" href="Accueil_connecter.html">Valider</a>
+        </form>
+    </div>
 
     <a href="Connexion.html" style="font-weight: bold; color: #232425">Se connecter</a>
 </div>
