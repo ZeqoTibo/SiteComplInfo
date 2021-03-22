@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOPSCINE - Connexion</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--import bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Icons Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+<!-- container : met à 80% la largeur du conteneur par rapport au parent -->
+<div class="container text-center">
+
+    <!-- Logo du site -->
+    <a href="Accueil_non_connecter.html" alt="Logo Accueil" ><img src="../Images/logo.svg" alt="logo" style="margin: 10%; height: 150px"></a>
+
+    <h4>Connexion</h4>
+
+
+    <!-- Formulaire de saisi des informations -->
+    <form method="post" action="#" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="login" class="text-center">Pseudo</label>
+            <input type="text" class="form-control" id="login" placeholder="Exemple : Cleo_fleo" name="login" required>
+            <div class="valid-feedback">Valide.</div>
+            <div class="invalid-feedback">Veuillez mettre un login.</div>
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" class="form-control" id="password" placeholder="Exemple : j5gH8m76" name="password" required>
+            <div class="valid-feedback">Valide.</div>
+            <div class="invalid-feedback">Veuillez mettre un mot de passe.</div>
+        </div>
+
+        <!-- Bouton qui envoie les informations du formulaire (Submit) -->
+        <a class="btn btn-success" href="Accueil_connecter.html">Valider</a>
+    </form>
+
+    <a href="Inscription.html" style="font-weight: bold; color: #232425">S'inscrire</a>
+</div>
+</body>
+</html>
