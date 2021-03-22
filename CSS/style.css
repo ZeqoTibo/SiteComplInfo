@@ -6,29 +6,21 @@
 }
 
 
-body
-{
+body {
     position: relative;
 }
 
-p
-{
+p {
     font-size: 0.6em;
 }
 
-h4
-{
+h4 {
     font-size: 1.4em;
 }
 
-h3
-{
+h3 {
     font-size: 1.5em;
 }
-
-
-
-
 
 
 /* --------------------------------------------- HEADER --------------------------------------------- */
@@ -53,127 +45,104 @@ header ul .nav-item:nth-child(2) {
     border-style: none;
 }
 
-.navbar-light .navbar-nav .nav-link
-{
+.navbar-light .navbar-nav .nav-link {
     color: #373741;
 }
 
-header a:hover
-{
+header a:hover {
     color: #6fa8dc;
 }
 
-.border_section
-{
+.border_section {
     border-bottom: 1px solid #6fa8dc;
 }
 
-#navbarHamburger
-{
+#navbarHamburger {
     justify-content: center;
 }
 
-.navbar-light .navbar-toggler
-{
-    border: none;
-}
-{
+.navbar-light .navbar-toggler {
     border: none;
 }
 
-.navbar-light .navbar-toggler:active
 {
-    border: none;
+    border: none
+;
 }
 
-
-
-
-
+.navbar-light .navbar-toggler:active {
+    border: none;
+}
 
 
 /* --------------------------------------------- FOOTER --------------------------------------------- */
 
 
-footer
-{
+footer {
     background: #373741;
     padding: 20px 0 20px;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     margin: 0;
 }
 
-footer a, footer li
-{
+footer a, footer li {
     color: white;
     font-size: 0.8em;
     text-decoration: none;
 }
 
-footer a:hover
-{
+footer a:hover {
     text-decoration: none;
     color: #6fa8dc;
     /*color: #AA3333;*/
 
 }
 
-footer p
-{
+footer p {
     font-size: 0.6em;
     color: white;
 }
 
-footer ul
-{
+footer ul {
     list-style-type: none;
     padding-left: 2%;
 
 
 }
 
-footer h3
-{
+footer h3 {
     color: white;
     font-size: 1em;
     text-transform: uppercase;
 }
 
-footer img
-{
+footer img {
     width: 40%;
 
 }
 
-footer img:hover
-{
+footer img:hover {
     width: 41%;
 }
 
-#reseaux_sociaux
-{
+#reseaux_sociaux {
     color: white;
 }
 
 /* --------------------------------------------- ACCUEIL --------------------------------------------- */
 
 
-
-
-#carousel h2, #histoire h2, #fond h2, #type h2
-{
+#carousel h2, #histoire h2, #fond h2, #type h2 {
     font-size: 1.6em;
     padding-bottom: 4vw;
 }
 
-#carousel, #histoire, #fond
-{
+#carousel, #histoire, #fond {
     padding: 4vw 0 4vw 0;
 }
 
-#fond
-{
+#fond {
     background-image: url("../images/fond.jpeg");
     background-repeat: no-repeat;
     background-position: center;
@@ -182,80 +151,63 @@ footer img:hover
 }
 
 
-#histoire img
-{
+#histoire img {
     width: 80%;
 }
 
-#type img
-{
+#type img {
     width: 70%;
 }
 
 
-#type
-{
+#type {
     background-color: #6fa8dc;
     color: white;
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
 
-#pKit ul
-{
+#pKit ul {
     font-size: 0.6em;
 }
 
-#fond
-{
+#fond {
     color: white;
 }
 
 
-
-
-
 /* CAROUSEL */
 
-.carousel-control-prev, .carousel-control-next
-{
-    background-image:none;
+.carousel-control-prev, .carousel-control-next {
+    background-image: none;
 }
 
-.carousel-control-prev img, .carousel-control-next img
-{
+.carousel-control-prev img, .carousel-control-next img {
     width: 20%;
 }
 
-.carousel-indicators
-{
-    bottom:0px;
+.carousel-indicators {
+    bottom: 0px;
 }
 
-.carousel-indicators li
-{
-    border:0.5px solid #373741;
+.carousel-indicators li {
+    border: 0.5px solid #373741;
 }
 
-.carousel-indicators li.active
-{
-    background:#373741;
+.carousel-indicators li.active {
+    background: #373741;
 }
 
 
-
-#myCarousel .carousel-item
-{
+#myCarousel .carousel-item {
     padding: 1vw;
 }
 
-#myCarousel .carousel-item h6
-{
-    color:  #888;
+#myCarousel .carousel-item h6 {
+    color: #888;
 }
 
-.carousel-inner img
-{
+.carousel-inner img {
     height: 40vh;
     width: auto;
 }
@@ -264,121 +216,95 @@ footer img:hover
 /* --------------------------------------------- DEVIS --------------------------------------------- */
 
 
-#devis p
-{
+#devis p {
     text-align: center;
 }
 
 
-#devis img
-{
+#devis img {
     width: 20vw;
 }
-
-
-
-
 
 
 /* --------------------------------------------- A PROPOS DE NOUS --------------------------------------------- */
 
 
-#contact, #entreprise
-{
+#contact, #entreprise {
     background-color: #6fa8dc;
     color: white;
     padding-top: 3vw;
 }
 
-#entreprise, #contact, #quisommesnous{
+#entreprise, #contact, #quisommesnous {
     padding-bottom: 3vw;
 }
 
-#entreprise h2, #quisommesnous h2
-{
+#entreprise h2, #quisommesnous h2 {
     font-size: 1.6em;
     padding-bottom: 4vw;
 }
 
-#contact h2
-{
+#contact h2 {
     font-size: 1.6em;
 }
 
-#contact h4
-{
+#contact h4 {
     font-size: 1.1em;
     padding-bottom: 4vw;
 }
 
-#contact i
-{
+#contact i {
     font-size: 2em;
     margin-bottom: 0.5vw;
 }
 
-#quisommesnous i
-{
+#quisommesnous i {
     font-size: 3em;
     margin-bottom: 0.5vw;
 }
 
-#contact a
-{
+#contact a {
     text-decoration: none;
     color: white;
 }
 
-#contact a:hover
-{
+#contact a:hover {
     text-decoration: none;
     color: #373741;
 }
 
-#quisommesnous
-{
-    color:#373741;
+#quisommesnous {
+    color: #373741;
     padding-top: 4vw;
 }
 
 
-#entreprise img
-{
+#entreprise img {
     width: 100%;
 }
 
-#title_a_propos_de_nous
-{
+#title_a_propos_de_nous {
     padding: 2vw 0 2vw 0;
     text-transform: uppercase;
     font-style: oblique;
 
 }
 
-#title_a_propos_de_nous h1
-{
-    font-size:1.7em;
+#title_a_propos_de_nous h1 {
+    font-size: 1.7em;
     font-weight: bold;
 }
-
-
 
 
 @media screen and (min-width: 200px) and (max-width: 767px) {
 
 
-
-
-
-
     /* --------------------------------------------- HEADER --------------------------------------------- */
-
-    header{
+    header {
         display: flex;
     }
 
-    header img
-    {
+    header img {
         padding: 1vw;
         width: 20%;
         display: flex;
@@ -392,38 +318,30 @@ footer img:hover
 @media screen and (min-width: 768px) {
 
 
-
     /* --------------------------------------------- USE ON TIME ---------------------------------------------  */
-
-    .place-to-footer
-    {
+    .place-to-footer {
         padding-bottom: 170px;
     }
 
     /* --------------------------------------------- HEADER --------------------------------------------- */
-
     header img {
         width: 5%;
 
     }
 
-    .navbar-inverse .navbar-toggle
-    {
+    .navbar-inverse .navbar-toggle {
         opacity: 1;
     }
 
-    .navbar-inverse .navbar-toggle .icon-bar
-    {
+    .navbar-inverse .navbar-toggle .icon-bar {
         background-color: #373741;
     }
 
 
     /* --------------------------------------------- FOOTER --------------------------------------------- */
-
-    footer
-    {
+    footer {
         position: absolute;
-        bottom:0;
+        bottom: 0;
         width: 100%;
         margin: 0;
     }
