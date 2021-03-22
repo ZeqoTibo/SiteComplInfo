@@ -5,22 +5,20 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     position: relative;
+    display: flex;
+flex-direction: column;
 }
 
-p {
-    font-size: 0.6em;
-}
 
-h4 {
-    font-size: 1.4em;
-}
 
-h3 {
-    font-size: 1.5em;
-}
 
 
 /* --------------------------------------------- HEADER --------------------------------------------- */
@@ -81,14 +79,11 @@ header a:hover {
 footer {
     background: #373741;
     padding: 20px 0 20px;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
+    margin-top: auto;
 }
 
 footer a, footer li {
     color: white;
-    font-size: 0.8em;
     text-decoration: none;
 }
 
@@ -100,7 +95,6 @@ footer a:hover {
 }
 
 footer p {
-    font-size: 0.6em;
     color: white;
 }
 
@@ -113,7 +107,6 @@ footer ul {
 
 footer h3 {
     color: white;
-    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -134,7 +127,6 @@ footer img:hover {
 
 
 #carousel h2, #histoire h2, #fond h2, #type h2 {
-    font-size: 1.6em;
     padding-bottom: 4vw;
 }
 
@@ -240,16 +232,12 @@ footer img:hover {
 }
 
 #entreprise h2, #quisommesnous h2 {
-    font-size: 1.6em;
     padding-bottom: 4vw;
 }
 
-#contact h2 {
-    font-size: 1.6em;
-}
 
 #contact h4 {
-    font-size: 1.1em;
+
     padding-bottom: 4vw;
 }
 
@@ -291,7 +279,6 @@ footer img:hover {
 }
 
 #title_a_propos_de_nous h1 {
-    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -300,9 +287,7 @@ footer img:hover {
 
 
     /* --------------------------------------------- HEADER --------------------------------------------- */
-    header {
-        display: flex;
-    }
+
 
     header img {
         padding: 1vw;
@@ -312,6 +297,9 @@ footer img:hover {
 
     }
 
+    /*.place-to-footer {
+        padding-bottom: 170px;
+    }*/
 
 }
 
@@ -319,9 +307,9 @@ footer img:hover {
 
 
     /* --------------------------------------------- USE ON TIME ---------------------------------------------  */
-    .place-to-footer {
+    /*.place-to-footer {
         padding-bottom: 170px;
-    }
+    }*/
 
     /* --------------------------------------------- HEADER --------------------------------------------- */
     header img {
@@ -340,10 +328,10 @@ footer img:hover {
 
     /* --------------------------------------------- FOOTER --------------------------------------------- */
     footer {
-        position: absolute;
-        bottom: 0;
+
+
         width: 100%;
-        margin: 0;
+
     }
 
 }
