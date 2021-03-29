@@ -217,8 +217,19 @@ footer img:hover {
     width: 20vw;
 }
 
-#container{
-    background: #6fa8dc;
+
+#main-devis
+{
+    background-image: url("../images/fond.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 100%;
+}
+
+#main-devis form label
+{
+    color:white;
 }
 
 
