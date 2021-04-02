@@ -12,6 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function save(){
+            alert("Bien enregistrer");
+        }
+    </script>
     <!-- Icons Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -30,7 +35,8 @@
             <ul class="navbar-nav">
                 <li class="nav-item "><a class="nav-link " href="Accueil_connecter.html">Accueil</a></li>
                 <li class="nav-item "><a class="nav-link" href="Devis_connecter.html">Faire un devis</a></li>
-                <li class="nav-item border-bottom border-info"><a class="nav-link " href="Compte_connecter.html">Mon compte</a></li>
+                <li class="nav-item border-bottom border-info"><a class="nav-link " href="Compte_connecter.html">Mon
+                    compte</a></li>
             </ul>
         </div>
         <div>
@@ -42,44 +48,45 @@
 </header>
 <main>
     <div id="container" class="container mb-5 mt-5 p-3 w-50">
-        <div class="row mb-3">
+        <form>
+            <div class="row mb-3">
                 <div class="form-group col-md-12">
                     <label for="inputNom">Nom</label>
-                    <input type="text" class="form-control" id="inputNom" placeholder="Nom" required pattern="">
+                    <input type="text" class="form-control" id="inputNom" placeholder="Nom" required pattern="[A-Za-z]{*}">
                 </div>
-        </div>
-        <div class="row mb-3">
-            <div class="form-group col-md-12">
-                <label for="inputPrenom">Prénom</label>
-                <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="form-group col-md-12">
-                <label for="inputPrenom">Téléphone</label>
-                <input type="text" class="form-control" id="inputTel" placeholder="Ex : 0609087485" required>
+            <div class="row mb-3">
+                <div class="form-group col-md-12">
+                    <label for="inputPrenom">Prénom</label>
+                    <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required pattern="[A-Za-z]{*}">
+                </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="form-group col-md-12">
-                <label for="inputPrenom">E-mail</label>
-                <input type="text" class="form-control" id="inputMail" placeholder="exemple@mail.com" required>
+            <div class="row mb-3">
+                <div class="form-group col-md-12">
+                    <label for="inputPrenom">Téléphone</label>
+                    <input type="tel" class="form-control" id="inputTel" pattern="[0-9]{10}" placeholder="Ex : 0609087485" required>
+                </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="form-group col-md-6">
-                <label for="inputPrenom">Ville</label>
-                <input type="text" class="form-control" id="inputVille" placeholder="Ville" required>
+            <div class="row mb-3">
+                <div class="form-group col-md-12">
+                    <label for="inputPrenom">E-mail</label>
+                    <input type="email" class="form-control" id="inputMail" placeholder="exemple@mail.com" required>
+                </div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputPrenom">Code postal</label>
-                <input type="text" class="form-control" id="inputCp" placeholder="Ex : 53200" required>
+            <div class="row mb-3">
+                <div class="form-group col-md-6">
+                    <label for="inputPrenom">Ville</label>
+                    <input type="text" class="form-control" pattern="[A-Za-z]{*}" id="inputVille" placeholder="Ville" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPrenom">Code postal</label>
+                    <input type="text" class="form-control" pattern="[0-9]{5}" id="inputCp" placeholder="Ex : 53200" required>
+                </div>
             </div>
-        </div>
-        <div class="bouton text-center">
-            <button type="submit" class="btn btn-primary" onclick="save();">Sauvegarder</button>
-        </div>
-
+            <div class="bouton text-center">
+                <input type="submit" class="btn btn-success" value="Sauvegarder" onclick="save()" >
+            </div>
+        </form>
     </div>
 
 </main>
@@ -91,23 +98,23 @@
             <img src="../images/logo-inverse.png" alt="logo du site - bas de page">
         </div>
         <div class="col-md-3">
-            <h3><a href="Accueil_non_connecter.html">Accueil</a></h3>
+            <h3><a href="Accueil_connecter.html">Accueil</a></h3>
             <ul>
-                <li><a href="#histoire">L'histoire de la piscine</a></li>
-                <li><a href="#type">Les types de piscines gonflable</a></li>
-                <li><a href="#carousel">Nos produits</a></li>
+                <li><a href="Accueil_connecter.html#histoire">L'histoire de la piscine</a></li>
+                <li><a href="Accueil_connecter.html#type">Les types de piscines gonflable</a></li>
+                <li><a href="Accueil_connecter.html#carousel">Nos produits</a></li>
             </ul>
         </div>
         <div class="col-md-3">
-            <h3><a href="Devis_non_connecter.html">Faire un devis</a></h3>
+            <h3><a href="Devis_connecter.html">Faire un devis</a></h3>
             <ul>
                 <li><a>Piscines gonflable</a></li>
             </ul>
         </div>
         <div class="col-md-3">
-            <h3><a href="Compte_non_connecter.html">Mon compte</a></h3>
+            <h3><a href="Compte_connecter.html">Mon compte</a></h3>
             <ul>
-                <li><a href="Compte_non_connecter.html">Se connecter</a></li>
+
 
             </ul>
         </div>

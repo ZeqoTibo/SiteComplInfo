@@ -15,6 +15,37 @@
     <!-- Icons Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script>
+        function change() {
+            var selectForme = document.getElementById("selectForme");
+            var valeurselec = selectForme.options[selectForme.selectedIndex].value;
+            console.log(valeurselec);
+
+            var selectHauteur = document.getElementById("selectHauteur");
+            var selectLargeur = document.getElementById("selectLargeur");
+            var selectLongueur = document.getElementById("selectLongueur");
+            var selectDiametre= document.getElementById("selectDiam");
+
+            if(valeurselec == "rec"){
+                selectDiametre.disabled = true;
+                selectLargeur.disabled = false;
+
+            } else if(valeurselec == "carre"){
+                selectDiametre.disabled = true;
+                selectLongueur.disabled = true;
+                selectLargeur.disabled = false;
+
+            } else if(valeurselec == "ronde"){
+                selectLongueur.disabled = true;
+                selectLargeur.disabled = true;
+                selectDiametre.disabled = false;
+            }
+        }
+        function alertz() {
+            alert("xxxxxx");
+            Console.debug("coucou");
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -42,85 +73,80 @@
 </header>
 <main id="main-devis">
     <div id="container" class="container mb-5 mt-5 p-3 w-50 bg-transparent bg-gradient rounded">
-        <form>
+        <form onchange="change()">
             <div class="row mb-3">
                 <div class="form-group col-md-6">
-                    <label for="inputNom">Nom</label>
-                    <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+                    <label for="inputNom" class="font-weight-bold">Nom</label>
+                    <input type="text" pattern="[A-Za-z]{*}" class="form-control" id="inputNom" placeholder="Nom" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPrenom">Prénom</label>
-                    <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom">
+                    <input type="text" pattern="[A-Za-z]{*}" class="form-control" id="inputPrenom" placeholder="Prénom" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="prenom@exemple.com">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="prenom@exemple.com" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputTel">Télephone</label>
-                    <input type="text" class="form-control" id="inputTel" placeholder="0684759384">
+                    <input type="tel" pattern="[0-9]{10}" class="form-control" id="inputTel" placeholder="0684759384" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="form-group col-md-6">
                     <label for="selectForme">Forme de la piscine</label>
-                    <select class="form-select" id="selectForme" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select" id="selectForme" aria-label="Default select example" required>
+                        <option value="rec">Rectangle</option>
+                        <option value="carre">Carre</option>
+                        <option value="ronde">Ronde</option>
                     </select>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="selectHauteur">Hauteur de la piscine</label>
-                    <select class="form-select" id="selectHauteur" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select" id="selectHauteur" aria-label="Default select example" >
+                        <option value="1"><1m10</option>
+                        <option value="2">Entre 1m10 et 2m</option>
+                        <option value="3">>2m</option>
                     </select>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="form-group col-md-4">
                     <label for="selectLargeur">Largeur de la piscine</label>
-                    <select class="form-select" id="selectLargeur" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select" id="selectLargeur" aria-label="Default select example" >
+
+                        <option value="1"><3m50</option>
+                        <option value="2">Entre 3m50 et 5m</option>
+                        <option value="3">>5m</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="selectLongueur">Longueur de la piscine</label>
                     <select class="form-select" id="selectLongueur" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+
+                        <option value="1"><4m50</option>
+                        <option value="2">Entre 4m50 et 7m</option>
+                        <option value="3">>7m</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="selectDiam">Diametre de la piscine</label>
-                    <select class="form-select" id="selectDiam" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select" id="selectDiam" aria-label="Default select example" disabled>
+                        <option value="1"><4m</option>
+                        <option value="2">Entre 4m et 6m</option>
+                        <option value="4">>6m</option>
                     </select>
                 </div>
             </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input bg-success border border-success" type="checkbox" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                </div>
-            <div class="bouton text-center">
-                <button type="submit" class="btn btn-success">Envoyer</button>
+            <div class="form-check form-switch">
+                <input class="form-check-input bg-success border border-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Options comprises (pompe, filtres..)</label>
             </div>
-
-
+            <div class="bouton text-center">
+                <input type="submit" class="btn btn-success" onsubmit="alertz()" value="Envoyer">
+            </div>
         </form>
     </div>
 </main>
@@ -132,23 +158,23 @@
             <img src="../images/logo-inverse.png" alt="logo du site - bas de page">
         </div>
         <div class="col-md-3">
-            <h3><a href="Accueil_non_connecter.html">Accueil</a></h3>
+            <h3><a href="Accueil_connecter.html">Accueil</a></h3>
             <ul>
-                <li><a href="#histoire">L'histoire de la piscine</a></li>
-                <li><a href="#type">Les types de piscines gonflable</a></li>
-                <li><a href="#carousel">Nos produits</a></li>
+                <li><a href="Accueil_connecter.html#histoire">L'histoire de la piscine</a></li>
+                <li><a href="Accueil_connecter.html#type">Les types de piscines gonflable</a></li>
+                <li><a href="Accueil_connecter.html#carousel">Nos produits</a></li>
             </ul>
         </div>
         <div class="col-md-3">
-            <h3><a href="Devis_non_connecter.html">Faire un devis</a></h3>
+            <h3><a href="Devis_connecter.html">Faire un devis</a></h3>
             <ul>
                 <li><a>Piscines gonflable</a></li>
             </ul>
         </div>
         <div class="col-md-3">
-            <h3><a href="Compte_non_connecter.html">Mon compte</a></h3>
+            <h3><a href="Compte_connecter.html">Mon compte</a></h3>
             <ul>
-                <li><a href="Compte_non_connecter.html">Se connecter</a></li>
+
 
             </ul>
         </div>
