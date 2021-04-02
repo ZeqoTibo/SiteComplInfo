@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
-        function save() {
+        function save(){
             alert("Bien enregistrer");
         }
     </script>
@@ -46,54 +46,77 @@
         </div>
     </nav>
 </header>
-<main id="main-profil">
-    <div class="row mt-5">
-        <div class="col-md-12 text-center">
-            <i class="fas fa-user-circle"></i>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-md-12 d-flex justify-content-center">
-            <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading " role="tab" id="headingOne">
-                        <h4 class="panel-title ">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                               aria-expanded="" aria-controls="collapseOne">
-                                <div class="title  btn btn-danger btn-outline btn-lg">PROFIL</div>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                         aria-labelledby="headingOne">
-                        <div class="panel-body text-center">
-                            Votre profil vous accompagnera tout a long de votre visite sur notre site web, vous y retrouverez vos informations et vos devis
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               aria-expanded="false" aria-controls="collapseTwo">
-                                <a href="#" class="title btn btn-danger btn-outline btn-lg">VOS DEVIS</a>
-                            </a>
-                        </h4>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               aria-expanded="false" aria-controls="collapseThree">
-                                <a href="Parametres_Compte.html" class="title btn btn-danger btn-outline btn-lg">VOS INFORMATIONS</a>
-                            </a>
-                        </h4>
-                    </div>
-                </div>
+<main>
+    <div id="container" class="container mb-5 mt-5 p-3 w-50">
+        <div class="row">
+            <div class="text-center">
+                <h3>Informations du compte</h3>
+                <h5>Vous pouvez les modifier à tout moment</h5>
             </div>
         </div>
+        <div class="row">
+            <form>
+                <div class="row mb-3">
+                    <div class="form-group col-md-12">
+                        <label for="inputNom">Nom</label>
+                        <input type="text" class="form-control" id="inputNom" placeholder="Nom" required pattern="[A-Za-z]{*}">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-md-12">
+                        <label for="inputPrenom">Prénom</label>
+                        <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required pattern="[A-Za-z]{*}">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-md-12">
+                        <label for="inputPrenom">Téléphone</label>
+                        <input type="tel" class="form-control" id="inputTel" pattern="[0-9]{10}" placeholder="Ex : 0609087485" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-md-12">
+                        <label for="inputPrenom">E-mail</label>
+                        <input type="email" class="form-control" id="inputMail" placeholder="exemple@mail.com" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+                        <label for="inputPrenom">Ville</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]{*}" id="inputVille" placeholder="Ville" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPrenom">Code postal</label>
+                        <input type="text" class="form-control" pattern="[0-9]{5}" id="inputCp" placeholder="Ex : 53200" required>
+                    </div>
+                </div>
+                <div class="bouton text-center">
+                    <input type="submit" class="btn btn-success" value="Sauvegarder" onclick="save()" >
+                </div>
+            </form>
+        </div>
+        <div class="row mt-5">
+            <div class="text-center">
+                <h3>Paramètres du compte</h3>
+            </div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="row mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Abonnement a notre Newsletter
+                        </label>
+                    </div>
+                </div>
+                <div class="bouton text-center">
+                    <input type="submit" class="btn btn-success" value="Sauvegarder" onclick="save()" >
+                </div>
+            </form>
+        </div>
     </div>
+
 </main>
 
 <footer class="container-fluid">
