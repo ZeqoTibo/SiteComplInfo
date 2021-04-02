@@ -14,7 +14,7 @@ html, body{
 body {
     position: relative;
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 
 
@@ -224,7 +224,7 @@ footer img:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: 100%;
+
 }
 
 #main-devis form label
@@ -342,12 +342,7 @@ footer img:hover {
 
 
     /* --------------------------------------------- FOOTER --------------------------------------------- */
-    footer {
 
-
-        width: 100%;
-
-    }
 
 }
 
